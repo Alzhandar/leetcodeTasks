@@ -15,13 +15,13 @@ class Solution:
         for i in range(diff_count):
             list.append("_")
 
-        # return f'{l}, nums = {unique_nums + list}'
+
         length = 1
         for i in range(1, len(nums)):
             if nums[i] != nums[length - 1]:
                 nums[length] = nums[i]
                 length += 1
-        return length
+        return f'{length} {l}, nums = {unique_nums + list}'
 
     
 s = Solution()
