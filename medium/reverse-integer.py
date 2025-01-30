@@ -12,6 +12,6 @@ class Solution:
     
 
 s = Solution()
-print(s.revers2(-123))
+print(s.revers2(-123))    
 
 
