@@ -1,8 +1,7 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        letters = [char for char in s if char.isalpha()]
+        letters = [char.lower() for char in s if char.isalnum()]
         l = letters[::-1]
-        l.lower()
-        return letters, l
+        return letters == l
 s = Solution()
 print(s.isPalindrome('A man, a plan, a canal: Panama'))
