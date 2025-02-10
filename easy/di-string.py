@@ -13,7 +13,6 @@ class Solution:
                 max_val -= 1  
         
         perm.append(min_val)  
-        
         return perm
 
 s = Solution()
