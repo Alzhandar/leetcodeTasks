@@ -15,6 +15,7 @@ class Solution:
                 l2.append(nums[i])
         l = l0 + l1 + l2
         return l
+    
 
 s = Solution()
 print(s.sortColors([2,0,2,1,1,0]))
