@@ -15,12 +15,6 @@ class Solution:
         
         return [d[score[i]] for i in range(len(score))]
 
-
-
-        
-
-  
-
 s = Solution()
 print(s.findRelativeRanks([10,3,8,9,4]))
         
