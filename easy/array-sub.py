@@ -6,8 +6,7 @@ class Solution:
             for j in range(i + 1, len(nums) + 1):
                 if i + 1 == j:
                     subarrays.append([nums[i]])
-                else:
-                    subarrays.append(nums[i:j])        
+      
         total_sum = 0
         for subarray in subarrays:
             total_sum += sum(subarray)
