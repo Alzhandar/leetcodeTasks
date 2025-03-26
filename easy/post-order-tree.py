@@ -6,15 +6,14 @@ class Node:
         self.children = children
 
 class Solution:
-    def preorder(self, root: 'Node') -> List[int]:
+    def postorder(self, root: 'Node') -> List[int]:
         if root is None:
             return []
         res = []
-        res.append(root.val)
         for child in root.children:
-            res += self.preorder(child)
+            res += self.postorder(child)
+        res.append(root.val)
         return res
 
-
-
-        
+s = Solution()
+print(s.postorder(Node(1, [Node(3, [Node(5), Node(6)]), Node(2), Node(4)]) == [5, 6, 3, 2, 4, 1]))
