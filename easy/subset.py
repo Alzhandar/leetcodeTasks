@@ -11,7 +11,7 @@ class Solution:
             result.append(subset)
 
         return result
-    
+    8
 s = Solution()
 print(s.subsets([1,2,3]))
         
